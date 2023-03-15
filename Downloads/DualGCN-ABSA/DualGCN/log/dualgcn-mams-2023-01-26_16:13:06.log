@@ -1,0 +1,102 @@
+Loading vocab...
+token_vocab: 8393, post_vocab: 146, pos_vocab: 19, dep_vocab: 51, pol_vocab: 3
+cuda memory allocated: 1847369728
+n_trainable_params: 210453, n_nontrainable_params: 2517900
+training arguments:
+>>> model_name: dualgcn
+>>> dataset: mams
+>>> optimizer: <class 'torch.optim.adam.Adam'>
+>>> initializer: <function xavier_uniform_ at 0x7f27a1bb7940>
+>>> learning_rate: 1e-05
+>>> l2reg: 0.0001
+>>> num_epoch: 50
+>>> batch_size: 16
+>>> log_step: 5
+>>> embed_dim: 300
+>>> post_dim: 30
+>>> pos_dim: 30
+>>> hidden_dim: 50
+>>> num_layers: 2
+>>> polarities_dim: 3
+>>> input_dropout: 0.7
+>>> gcn_dropout: 0.1
+>>> lower: True
+>>> direct: False
+>>> loop: True
+>>> bidirect: True
+>>> rnn_hidden: 50
+>>> rnn_layers: 1
+>>> rnn_dropout: 0.1
+>>> attention_heads: 1
+>>> max_length: 85
+>>> device: cuda:0
+>>> seed: 1000
+>>> weight_decay: 0.0
+>>> vocab_dir: ./DualGCN/dataset/MAMS_stanza
+>>> pad_id: 0
+>>> parseadj: True
+>>> parsehead: False
+>>> cuda: 0
+>>> losstype: doubleloss
+>>> alpha: 0.2
+>>> beta: 0.3
+>>> pretrained_bert_name: bert-base-uncased
+>>> adam_epsilon: 1e-08
+>>> bert_dim: 768
+>>> bert_dropout: 0.3
+>>> diff_lr: False
+>>> bert_lr: 2e-05
+>>> model_class: <class 'models.dualgcn.DualGCNClassifier'>
+>>> dataset_file: {'train': './DualGCN/dataset/MAMS_stanza/train.json', 'test': './DualGCN/dataset/MAMS_stanza/test.json'}
+>>> inputs_cols: ['text', 'aspect', 'pos', 'head', 'deprel', 'post', 'mask', 'length', 'adj']
+>>> post_size: 146
+>>> pos_size: 19
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+>> saved: ./DualGCN/state_dict/dualgcn_mams_acc_0.2994_f1_0.1536
+loss: 1.4982, acc: 0.2500, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2188, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.1875, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2344, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2250, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2188, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2232, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2109, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2222, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2500, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2557, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2552, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2548, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2634, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2542, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2695, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2610, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2569, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2500, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2562, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2560, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2699, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2690, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2708, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2750, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2740, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2778, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2812, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2823, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2812, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2843, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2812, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2822, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2812, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2804, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2795, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2821, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2829, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2901, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2906, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2866, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2872, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2936, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2926, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2931, test_acc: 0.2994, f1: 0.1536
+loss: nan, acc: 0.2908, test_acc: 0.2994, f1: 0.1536

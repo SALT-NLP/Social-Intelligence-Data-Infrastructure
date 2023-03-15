@@ -1,0 +1,130 @@
+Loading vocab...
+token_vocab: 4460, post_vocab: 160, pos_vocab: 47, dep_vocab: 45, pol_vocab: 3
+cuda memory allocated: 1842728448
+n_trainable_params: 211713, n_nontrainable_params: 1356300
+training arguments:
+>>> model_name: dualgcn
+>>> dataset: restaurant
+>>> optimizer: <class 'torch.optim.adam.Adam'>
+>>> initializer: <function xavier_uniform_ at 0x7ff05084b940>
+>>> learning_rate: 1e-05
+>>> l2reg: 0.0001
+>>> num_epoch: 50
+>>> batch_size: 16
+>>> log_step: 5
+>>> embed_dim: 300
+>>> post_dim: 30
+>>> pos_dim: 30
+>>> hidden_dim: 50
+>>> num_layers: 2
+>>> polarities_dim: 3
+>>> input_dropout: 0.7
+>>> gcn_dropout: 0.1
+>>> lower: True
+>>> direct: False
+>>> loop: True
+>>> bidirect: True
+>>> rnn_hidden: 50
+>>> rnn_layers: 1
+>>> rnn_dropout: 0.1
+>>> attention_heads: 1
+>>> max_length: 85
+>>> device: cuda:0
+>>> seed: 1000
+>>> weight_decay: 0.0
+>>> vocab_dir: ./DualGCN/dataset/Restaurants_stanza
+>>> pad_id: 0
+>>> parseadj: True
+>>> parsehead: False
+>>> cuda: 0
+>>> losstype: doubleloss
+>>> alpha: 0.2
+>>> beta: 0.3
+>>> pretrained_bert_name: bert-base-uncased
+>>> adam_epsilon: 1e-08
+>>> bert_dim: 768
+>>> bert_dropout: 0.3
+>>> diff_lr: False
+>>> bert_lr: 2e-05
+>>> model_class: <class 'models.dualgcn.DualGCNClassifier'>
+>>> dataset_file: {'train': './DualGCN/dataset/Restaurants_corenlp/train.json', 'test': './DualGCN/dataset/MAMS_stanza/test.json'}
+>>> inputs_cols: ['text', 'aspect', 'pos', 'head', 'deprel', 'post', 'mask', 'length', 'adj']
+>>> post_size: 160
+>>> pos_size: 47
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+>> saved: ./DualGCN/state_dict/dualgcn_restaurant_acc_0.2994_f1_0.1536
+loss: 1.3060, acc: 0.6250, test_acc: 0.2994, f1: 0.1536
+loss: 1.4007, acc: 0.5312, test_acc: 0.2994, f1: 0.1536
+loss: 1.3434, acc: 0.5417, test_acc: 0.2994, f1: 0.1536
+loss: 1.3178, acc: 0.5312, test_acc: 0.2994, f1: 0.1536
+loss: 1.3404, acc: 0.5125, test_acc: 0.2994, f1: 0.1536
+loss: 1.2731, acc: 0.5521, test_acc: 0.2994, f1: 0.1536
+loss: 1.3682, acc: 0.5536, test_acc: 0.2994, f1: 0.1536
+loss: 1.2901, acc: 0.5625, test_acc: 0.2994, f1: 0.1536
+loss: 1.3485, acc: 0.5625, test_acc: 0.2994, f1: 0.1536
+loss: 1.2808, acc: 0.5750, test_acc: 0.2994, f1: 0.1536
+loss: 1.3949, acc: 0.5682, test_acc: 0.2994, f1: 0.1536
+loss: 1.4206, acc: 0.5573, test_acc: 0.2994, f1: 0.1536
+loss: 1.4555, acc: 0.5481, test_acc: 0.2994, f1: 0.1536
+loss: 1.2844, acc: 0.5536, test_acc: 0.2994, f1: 0.1536
+loss: 1.2617, acc: 0.5667, test_acc: 0.2994, f1: 0.1536
+loss: 1.2927, acc: 0.5703, test_acc: 0.2994, f1: 0.1536
+loss: 1.4548, acc: 0.5625, test_acc: 0.2994, f1: 0.1536
+loss: 1.3608, acc: 0.5625, test_acc: 0.2994, f1: 0.1536
+loss: 1.3609, acc: 0.5625, test_acc: 0.2994, f1: 0.1536
+loss: 1.2877, acc: 0.5719, test_acc: 0.2994, f1: 0.1536
+loss: 1.3845, acc: 0.5655, test_acc: 0.2994, f1: 0.1536
+loss: 1.3958, acc: 0.5597, test_acc: 0.2994, f1: 0.1536
+loss: 1.3438, acc: 0.5598, test_acc: 0.2994, f1: 0.1536
+loss: 1.2713, acc: 0.5625, test_acc: 0.2994, f1: 0.1536
+loss: 1.2265, acc: 0.5700, test_acc: 0.2994, f1: 0.1536
+loss: 1.3919, acc: 0.5697, test_acc: 0.2994, f1: 0.1536
+loss: 1.3718, acc: 0.5671, test_acc: 0.2994, f1: 0.1536
+loss: 1.4696, acc: 0.5647, test_acc: 0.2994, f1: 0.1536
+loss: 1.4467, acc: 0.5582, test_acc: 0.2994, f1: 0.1536
+loss: 1.2463, acc: 0.5646, test_acc: 0.2994, f1: 0.1536
+loss: 1.3185, acc: 0.5685, test_acc: 0.2994, f1: 0.1536
+loss: 1.3011, acc: 0.5723, test_acc: 0.2994, f1: 0.1536
+loss: 1.2707, acc: 0.5758, test_acc: 0.2994, f1: 0.1536
+loss: 1.2902, acc: 0.5790, test_acc: 0.2994, f1: 0.1536
+loss: 1.2904, acc: 0.5804, test_acc: 0.2994, f1: 0.1536
+loss: 1.2669, acc: 0.5833, test_acc: 0.2994, f1: 0.1536
+loss: 1.2197, acc: 0.5895, test_acc: 0.2994, f1: 0.1536
+loss: 1.3823, acc: 0.5888, test_acc: 0.2994, f1: 0.1536
+loss: 1.4328, acc: 0.5833, test_acc: 0.2994, f1: 0.1536
+loss: 1.3211, acc: 0.5828, test_acc: 0.2994, f1: 0.1536
+loss: 1.4449, acc: 0.5793, test_acc: 0.2994, f1: 0.1536
+loss: 1.2900, acc: 0.5804, test_acc: 0.2994, f1: 0.1536
+loss: 1.3237, acc: 0.5799, test_acc: 0.2994, f1: 0.1536
+loss: 1.2485, acc: 0.5838, test_acc: 0.2994, f1: 0.1536
+loss: 1.4541, acc: 0.5806, test_acc: 0.2994, f1: 0.1536
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 1
+loss: 1.2494, acc: 0.7500, test_acc: 0.2994, f1: 0.1536
+loss: 1.3617, acc: 0.6562, test_acc: 0.2994, f1: 0.1536
+loss: 1.3053, acc: 0.6458, test_acc: 0.2994, f1: 0.1536
+loss: 1.3183, acc: 0.6406, test_acc: 0.2994, f1: 0.1536
+loss: 1.2590, acc: 0.6625, test_acc: 0.2994, f1: 0.1536
+loss: 1.3310, acc: 0.6562, test_acc: 0.2994, f1: 0.1536
+loss: 1.2793, acc: 0.6607, test_acc: 0.2994, f1: 0.1536
+loss: 1.1915, acc: 0.6797, test_acc: 0.2994, f1: 0.1536
+loss: 1.4320, acc: 0.6597, test_acc: 0.2994, f1: 0.1536
+loss: 1.2852, acc: 0.6562, test_acc: 0.2994, f1: 0.1536
+loss: 1.3176, acc: 0.6420, test_acc: 0.2994, f1: 0.1536
+loss: 1.1641, acc: 0.6615, test_acc: 0.2994, f1: 0.1536
+loss: 1.5114, acc: 0.6346, test_acc: 0.2994, f1: 0.1536
+loss: 1.2953, acc: 0.6339, test_acc: 0.2994, f1: 0.1536
+loss: 1.3682, acc: 0.6292, test_acc: 0.2994, f1: 0.1536
+loss: 1.3853, acc: 0.6250, test_acc: 0.2994, f1: 0.1536
+loss: 1.3022, acc: 0.6213, test_acc: 0.2994, f1: 0.1536
+loss: 1.3465, acc: 0.6215, test_acc: 0.2994, f1: 0.1536
+loss: 1.2955, acc: 0.6250, test_acc: 0.2994, f1: 0.1536
+loss: 1.3148, acc: 0.6250, test_acc: 0.2994, f1: 0.1536
+loss: 1.4698, acc: 0.6131, test_acc: 0.2994, f1: 0.1536
+loss: 1.3046, acc: 0.6136, test_acc: 0.2994, f1: 0.1536
+loss: 1.2735, acc: 0.6141, test_acc: 0.2994, f1: 0.1536
+loss: 1.3035, acc: 0.6172, test_acc: 0.2994, f1: 0.1536
+loss: 1.2681, acc: 0.6175, test_acc: 0.2994, f1: 0.1536
+loss: 1.3766, acc: 0.6130, test_acc: 0.2994, f1: 0.1536
+loss: 1.3240, acc: 0.6111, test_acc: 0.2994, f1: 0.1536

@@ -1,0 +1,100 @@
+Loading vocab...
+token_vocab: 8393, post_vocab: 146, pos_vocab: 49, dep_vocab: 51, pol_vocab: 3
+cuda memory allocated: 1838680064
+n_trainable_params: 211353, n_nontrainable_params: 344700
+training arguments:
+>>> model_name: dualgcn
+>>> dataset: mamssmall
+>>> optimizer: <class 'torch.optim.adam.Adam'>
+>>> initializer: <function xavier_uniform_ at 0x7f83d8d13940>
+>>> learning_rate: 0.002
+>>> l2reg: 0.0001
+>>> num_epoch: 50
+>>> batch_size: 16
+>>> log_step: 5
+>>> embed_dim: 300
+>>> post_dim: 30
+>>> pos_dim: 30
+>>> hidden_dim: 50
+>>> num_layers: 2
+>>> polarities_dim: 3
+>>> input_dropout: 0.7
+>>> gcn_dropout: 0.1
+>>> lower: True
+>>> direct: False
+>>> loop: True
+>>> bidirect: True
+>>> rnn_hidden: 50
+>>> rnn_layers: 1
+>>> rnn_dropout: 0.1
+>>> attention_heads: 1
+>>> max_length: 85
+>>> device: cuda:0
+>>> seed: 1000
+>>> weight_decay: 0.0
+>>> vocab_dir: ./DualGCN/dataset/MAMS_small
+>>> pad_id: 0
+>>> parseadj: True
+>>> parsehead: False
+>>> cuda: 0
+>>> losstype: doubleloss
+>>> alpha: 0.2
+>>> beta: 0.3
+>>> pretrained_bert_name: bert-base-uncased
+>>> adam_epsilon: 1e-08
+>>> bert_dim: 768
+>>> bert_dropout: 0.3
+>>> diff_lr: False
+>>> bert_lr: 2e-05
+>>> model_class: <class 'models.dualgcn.DualGCNClassifier'>
+>>> dataset_file: {'train': './DualGCN/dataset/MAMS_small/train_xpos.json', 'test': './DualGCN/dataset/MAMS_small/test_xpos.json'}
+>>> inputs_cols: ['text', 'aspect', 'pos', 'head', 'deprel', 'post', 'mask', 'length', 'adj']
+>>> post_size: 146
+>>> pos_size: 49
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+>> saved: ./DualGCN/state_dict/dualgcn_mamssmall_acc_0.2994_f1_0.1536
+loss: 1.4955, acc: 0.2500, test_acc: 0.2994, f1: 0.1536
+>> saved: ./DualGCN/state_dict/dualgcn_mamssmall_acc_0.3757_f1_0.2851
+loss: 1.3524, acc: 0.4688, test_acc: 0.3757, f1: 0.2851
+>> saved: ./DualGCN/state_dict/dualgcn_mamssmall_acc_0.3982_f1_0.2910
+loss: 1.4588, acc: 0.3958, test_acc: 0.3982, f1: 0.2910
+>> saved: ./DualGCN/state_dict/dualgcn_mamssmall_acc_0.4581_f1_0.2541
+loss: 1.3757, acc: 0.3906, test_acc: 0.4581, f1: 0.2541
+loss: 1.5111, acc: 0.4000, test_acc: 0.4566, f1: 0.2398
+loss: 1.3690, acc: 0.4271, test_acc: 0.4147, f1: 0.2983
+loss: 1.3979, acc: 0.4107, test_acc: 0.3990, f1: 0.2965
+loss: 1.4114, acc: 0.4062, test_acc: 0.4207, f1: 0.2996
+loss: 1.3833, acc: 0.4028, test_acc: 0.4566, f1: 0.2763
+loss: 1.3934, acc: 0.4125, test_acc: 0.4558, f1: 0.2371
+loss: 1.3179, acc: 0.4205, test_acc: 0.4551, f1: 0.2290
+loss: 1.3292, acc: 0.4427, test_acc: 0.4558, f1: 0.2164
+loss: 1.2957, acc: 0.4519, test_acc: 0.4543, f1: 0.2083
+loss: 1.5474, acc: 0.4375, test_acc: 0.4543, f1: 0.2083
+loss: 1.3493, acc: 0.4375, test_acc: 0.4543, f1: 0.2083
+loss: 1.3772, acc: 0.4336, test_acc: 0.4543, f1: 0.2083
+>> saved: ./DualGCN/state_dict/dualgcn_mamssmall_acc_0.4626_f1_0.2504
+loss: 1.3733, acc: 0.4412, test_acc: 0.4626, f1: 0.2504
+>> saved: ./DualGCN/state_dict/dualgcn_mamssmall_acc_0.4641_f1_0.2739
+loss: 1.4367, acc: 0.4340, test_acc: 0.4641, f1: 0.2739
+>> saved: ./DualGCN/state_dict/dualgcn_mamssmall_acc_0.4656_f1_0.3285
+loss: 1.3737, acc: 0.4441, test_acc: 0.4656, f1: 0.3285
+loss: 1.2880, acc: 0.4500, test_acc: 0.4588, f1: 0.2217
+loss: 1.2708, acc: 0.4583, test_acc: 0.4543, f1: 0.2083
+loss: 1.2376, acc: 0.4602, test_acc: 0.4543, f1: 0.2083
+loss: 1.3996, acc: 0.4620, test_acc: 0.4543, f1: 0.2083
+loss: 1.3753, acc: 0.4635, test_acc: 0.4566, f1: 0.2205
+loss: 1.3558, acc: 0.4600, test_acc: 0.4626, f1: 0.3002
+loss: 1.3937, acc: 0.4567, test_acc: 0.4626, f1: 0.2704
+loss: 1.2921, acc: 0.4653, test_acc: 0.4641, f1: 0.2556
+loss: 1.3420, acc: 0.4643, test_acc: 0.4641, f1: 0.2600
+loss: 1.4061, acc: 0.4634, test_acc: 0.4558, f1: 0.2133
+loss: 1.4512, acc: 0.4604, test_acc: 0.4543, f1: 0.2083
+loss: 1.3640, acc: 0.4597, test_acc: 0.4543, f1: 0.2083
+loss: 1.4502, acc: 0.4590, test_acc: 0.4543, f1: 0.2083
+loss: 1.3602, acc: 0.4583, test_acc: 0.4543, f1: 0.2083
+loss: 1.3747, acc: 0.4577, test_acc: 0.4424, f1: 0.2519
+loss: 1.3331, acc: 0.4589, test_acc: 0.3922, f1: 0.2899
+loss: 1.2637, acc: 0.4566, test_acc: 0.4543, f1: 0.2085
+loss: 1.3468, acc: 0.4578, test_acc: 0.4543, f1: 0.2083
+loss: 1.4018, acc: 0.4539, test_acc: 0.4543, f1: 0.2098
