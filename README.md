@@ -6,7 +6,7 @@
     <a href="https://communication.ucdavis.edu/people/jingwen-zhang" target="_blank" style="text-decoration: none;">Caleb Ziems<sup>3</sup></a><br>
     <a href="https://cs.stanford.edu/~diyiy/" target="_blank" style="text-decoration: none;">Diyi Yang<sup>3</sup></a>&nbsp;,&nbsp;
     <br/> 
-<sup>1</sup>National University of Singapore&nbsp;&nbsp;&nbsp;<sup>2</sup>Agency for Science, Technology and Research (A*STAR)&nbsp;&nbsp;&nbsp;<sup>3</sup>Stanford University&nbsp;&nbsp;&nbsp;<sup>4</sup>Stanford University
+<sup>1</sup>National University of Singapore&nbsp;&nbsp;&nbsp;<sup>2</sup>Agency for Science, Technology and Research (A*STAR)&nbsp;&nbsp;&nbsp;<sup>3</sup>Stanford University
 </p>
 <p align='center';>
 <b>
@@ -21,12 +21,9 @@
 
 ------------
 
-# Social Intelligence Data Infrastructure: Structuring the Present and Navigating the Future
-This repository contains the code implementation for the paper titled ["Social Intelligence Data Infrastructure: Structuring the Present and Navigating the Future"](https://arxiv.org/abs/2403.14659).
-<img src="img/pipeline2.png">
-
-## Abstract
+## Introduction
 As Natural Language Processing (NLP) systems become increasingly integrated into human social life, these technologies will need to increasingly rely on social intelligence. Although there are many valuable datasets that benchmark isolated dimensions of social intelligence, there does not yet exist any body of work to join these threads into a cohesive subfield in which researchers can quickly identify research gaps and future directions. Towards this goal, we build a Social AI Data Infrastructure, which consists of a comprehensive social AI taxonomy and a data library of 480 NLP datasets. Our infrastructure allows us to analyze existing dataset efforts, and also evaluate language models' performance in different social intelligence aspects. Our analyses demonstrate its utility in enabling a thorough understanding of current data landscape and providing a holistic perspective on potential directions for future dataset development. We show there is a need for multifaceted datasets, increased diversity in language and culture, more long-tailed social situations, and more interactive data in future social intelligence data efforts.
+<img src="website/images/overview5.png">
 
 ## Taxonomy
 This section explains how you can apply human--LLM collaboration for data annotation.
