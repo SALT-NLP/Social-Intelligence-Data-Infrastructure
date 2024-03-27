@@ -23,21 +23,25 @@
 
 ## Introduction
 As Natural Language Processing (NLP) systems become increasingly integrated into human social life, these technologies will need to increasingly rely on social intelligence. Although there are many valuable datasets that benchmark isolated dimensions of social intelligence, there does not yet exist any body of work to join these threads into a cohesive subfield in which researchers can quickly identify research gaps and future directions. Towards this goal, we build a Social AI Data Infrastructure, which consists of a comprehensive social AI taxonomy and a data library of 480 NLP datasets. Our infrastructure allows us to analyze existing dataset efforts, and also evaluate language models' performance in different social intelligence aspects. Our analyses demonstrate its utility in enabling a thorough understanding of current data landscape and providing a holistic perspective on potential directions for future dataset development. We show there is a need for multifaceted datasets, increased diversity in language and culture, more long-tailed social situations, and more interactive data in future social intelligence data efforts.
+<p align="center">
 <img src="website/images/overview5.png" width="60%">
+</p>
 
 ## Taxonomy
 To introduce a standardized and comprehensive definition of social intelligence, we propose Social AI Taxonomy, to capture diverse %and scattered dimensions identified in previous work. As shown in the figure below, our taxonomy considers both the social understanding and the social interaction components and is hierarchical with three distinct types of social intelligence based on past literature: (1) cognitive intelligence, (2) situational intelligence, and (3) behavioral intelligence. 
+<p align="center">
 <img src="website/images/Taxonomy11.png" width="90%">
+</p>
 
 ## Data Library
 We applied keyword filtering and manual verification for papers scraped from ACL Anthology, obtaining a total of 480 NLP datasets on social intelligence. Each dataset has the attribute of year, title, link, type of intelligence, social factor, NLP task, data source, annotation strategy, generation method, data format, language, modality, public availability of the test set. You can access the data library from this [Google Sheet](https://docs.google.com/spreadsheets/d/1jSTmPaqaEVXxoLmt_DCk933PsthMucbIFT7KmZt2Q3A/edit?usp=sharing)
 
 ## LLM Performance
-# Cognitive Intelligence
+### Cognitive Intelligence
 
-# Situational Intelligence
+### Situational Intelligence
 
-# Behavioral Intelligence
+### Behavioral Intelligence
 
 ## Citation and Contact
 If you find this repository helpful, please cite our paper.
