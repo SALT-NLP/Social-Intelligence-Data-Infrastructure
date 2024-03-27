@@ -42,16 +42,19 @@ Compared to straightforward query intent recognition (95.0 F1), the best perform
 <p align="center">
 <img src="website/images/llm-cognitive.png" width="90%">
 </p>
+
 ### Situational Intelligence
 More social context in the data can also result in better performance: LLMs achieve a higher F1 on the CICERO dataset with both social situation description and dialogue data, than the SocialIQa dataset with only a simple description. LLMs also find long-tailed social situations (e.g. moral exceptions) more challenging.
 <p align="center">
 <img src="website/images/llm-situational.png" width="90%">
 </p>
+
 ### Behavioral Intelligence
 LLMs in real-life social applications usually require multiple intelligence (e.g. interpreting intents under different cultural backgrounds) but they are still lacking in performance (CulturalNLI: 65.0). Sections (A)-(C) show they perform well for individual modules, so systems can utilize LLMs for individual modules which LLMs do exceptionally well in and combine them organically to build a strong holistic system (e.g. combine emotion recognition and positive reframing components for a counseling system).
 <p align="center">
 <img src="website/images/llm-behavioral.png" width="90%">
 </p>
+
 ## Citation and Contact
 If you find this repository helpful, please cite our paper.
 
