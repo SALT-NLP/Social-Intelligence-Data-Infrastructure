@@ -4,7 +4,7 @@
     <a href="https://www.yi-zeng.com/" target="_blank" style="text-decoration: none;">Minzhi Li<sup>1,2</sup></a>&nbsp;,&nbsp;
     <a href="https://wyshi.github.io/" target="_blank" style="text-decoration: none;">Weiyan Shi<sup>3</sup></a>&nbsp;,&nbsp;
     <a href="https://communication.ucdavis.edu/people/jingwen-zhang" target="_blank" style="text-decoration: none;">Caleb Ziems<sup>3</sup></a><br>
-    <a href="https://cs.stanford.edu/~diyiy/" target="_blank" style="text-decoration: none;">Diyi Yang<sup>3</sup></a>&nbsp;,&nbsp;
+    <a href="https://cs.stanford.edu/~diyiy/" target="_blank" style="text-decoration: none;">Diyi Yang<sup>3</sup></a>&nbsp;&nbsp;
     <br/> 
 <sup>1</sup>National University of Singapore&nbsp;&nbsp;&nbsp;<sup>2</sup>Agency for Science, Technology and Research (A*STAR)&nbsp;&nbsp;&nbsp;<sup>3</sup>Stanford University
 </p>
@@ -38,11 +38,20 @@ We applied keyword filtering and manual verification for papers scraped from ACL
 
 ## LLM Performance
 ### Cognitive Intelligence
-
+Compared to straightforward query intent recognition (95.0 F1), the best performing LLM (GPT-4) struggles more with identifying the intended sarcasm (67.3 F1) when people convey an opposite meaning from what they literally said. Moreover, uncommon tasks with fewer datasets are more challenging, such as stance detection in the economic domain (most stance detection data is for political domain). With more fine-grained definitions on labels, LLMs have better performance in classification as seen from a higher F1 on GoEmotions than SemEvalT1 with more emotion classes defined.
+<p align="center">
+<img src="website/images/llm-cognitive.png" width="90%">
+</p>
 ### Situational Intelligence
-
+More social context in the data can also result in better performance: LLMs achieve a higher F1 on the CICERO dataset with both social situation description and dialogue data, than the SocialIQa dataset with only a simple description. LLMs also find long-tailed social situations (e.g. moral exceptions) more challenging.
+<p align="center">
+<img src="website/images/llm-situational.png" width="90%">
+</p>
 ### Behavioral Intelligence
-
+LLMs in real-life social applications usually require multiple intelligence (e.g. interpreting intents under different cultural backgrounds) but they are still lacking in performance (CulturalNLI: 65.0). Sections (A)-(C) show they perform well for individual modules, so systems can utilize LLMs for individual modules which LLMs do exceptionally well in and combine them organically to build a strong holistic system (e.g. combine emotion recognition and positive reframing components for a counseling system).
+<p align="center">
+<img src="website/images/llm-behavioral.png" width="90%">
+</p>
 ## Citation and Contact
 If you find this repository helpful, please cite our paper.
 
