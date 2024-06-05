@@ -10,7 +10,7 @@
 </p>
 <p align='center';>
 <b>
-<em>arXiv-Preprint, 2024</em> <br>
+<em>ACL Findings, 2024</em> <br>
 </b>
 </p>
 <p align='center' style="text-align:center;font-size:2.5 em;">
